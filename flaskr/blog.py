@@ -79,7 +79,7 @@ def update(id):
         if error is not None:
             flash(error)
         else:
-            db - get_db()
+            db = get_db()
             db.execute(
                 "UPDATE post SET title = ?, body = ?" " WHERE id = ?", (title, body, id)
             )
